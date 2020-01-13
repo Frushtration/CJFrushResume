@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Christie Frush (https://www.linkedin.com/in/cjfrush/)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% https://www.overleaf.com/project/5bc76cf20d921c5e9128a77b
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Christie}{Frush}{ 
+\href{mailto:cjfrush@ucdavis.edu}{cjfrush@ucdavis.edu} | 1.831.247.7038}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\subsection{University of California,}
+\subsection{Davis}
+\descript{B.S in Computer Science with a minor in Mathematics}
+\location{Expected June 2019| Davis, CA}
+\sectionsep
+
+\subsection{Cabrillo College}
+\descript{Graduated with Honors \\
+AA Degrees in}
+Computer Science \\
+Mathematics \\
+Physics\\ 
+Liberal Arts\\
+
+\location{May 2017| Santa Cruz, CA}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Frushtration}{\custombold{frushtration}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/cjfrush/}{\custombold{cjfrush}} \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+\subsection{Undergraduate}
+Software Engineering\\
+Applied Linear Algebra \\
+Business Writing \\
+Math for Data Analytics \\
+Algorithms \\
+Data Structures \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Strong}
+C++/C \textbullet{}   Java \textbullet{} Python \\ Matlab\textbullet{} \LaTeX\textbullet{}\ MongoDB \\ 
+NodeJS\textbullet{} Express \textbullet{} Docker \\
+
+\location{Familiar:}
+Assembly \textbullet{} HTML \\
+Javascript \textbullet{} MySQL
+\sectionsep
+
+\subsection{Other}
+French \textbullet{}   Violin/Viola \\
+Adobe Illustrator \textbullet{} InDesign \\ 
+Dreamweaver\\ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Customer Service
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Customer Service}
+Server at Kennolyn Weddings\\
+Busser/Hostess at La Gioconda\\
+Hostess at Seacliff Brewery \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+
+\runsubsection{Workday}
+\descript{| Application Development Intern }
+\location{June 2018 – Sep 2018 | Pleasanton, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Designed and collaborated within an Agile framework to build a RESTful API for the Payroll product. Learned the proprietary language to developed within the Workday framework. Constructed a reference application showcasing my API to illustrate its value to Workday executives.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{West Marine}
+\descript{| Technical Support Intern }
+\location{May 2017 – Aug 2017 | Watsonville, CA}
+
+\begin{tightemize}
+\item Performed diagnostic evaluations using remote access tools to resolve user identified issues. Analyzed and maintained SQL database for Point of Sale (POS) system issues using documented procedures and obtained knowledge.
+/item
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cabrillo Teacher Learning Center}
+\descript{| Technical Assistant}
+\location{Feb 2017 – May 2017 | Aptos, CA}
+
+\begin{tightemize}
+\item Collaborated with teachers to integrate new technologies into their classes. Routinely identified and troubleshot critical technical issues with the online class database Canvas. Updated and maintained the Cabrillo College website using Dreamweaver and other Adobe software. 
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2016	     & 1\textsuperscript{st}  & NASA Swarmathon Virtual Competition\\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Volunteer Experience}
+\runsubsection{Include}
+\descript{| Technical Lead and Officer}
+\location{Sep 2018 – May 2019 | Davis, CA}
+
+\begin{tightemize}
+\item Include is UC Davis club that aims to code for the benefit of others by developing web applications for nonprofits. Reviewed and delegated the entire project to understand the needs, time frame, and capabilities of our members in order to deliver on the clubs goals. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cabrillo Robotics Club}
+\descript{| Workshop Coordinator}
+\location{January 2016 – May 2016 | Aptos, CA}
+
+\begin{tightemize}
+\item Organized and coached skill based introductory workshops to help promote the Cabrillo Robotics Club. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{KWAV Radio Station}
+\descript{| Interdepartmental Intern}
+\location{May 2014 – Aug 2014 | Monterey, CA}
+
+\begin{tightemize}
+\item Discovered and fabricated integrated audio materials for various radio shows, facilitated company promotional events, and organized legal work. 
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{ Community Music School}
+\descript{| Teaching Assistant}
+\location{August 2009 – Aug 2016 | Santa Cruz, CA}
+
+\begin{tightemize}
+\item Assistant at local non-profit summer camp. Instructed small groups of students ages 5-13 both violin and viola, and guided teachers with classroom management. 
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\centerline{References available upon request}
+\end{document}
